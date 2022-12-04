@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  width: 50%;
+  list-style-type: none;
+  transition: 400ms;
+}
+
+#search-bar {
+  background-color: #3b3b3b;
+  border: none;
+  width: 100%;
+  height: 50px;
+  padding: 0 64px 0 16px;
+  border-radius: 5px;
+  color: rgb(230, 230, 230);
+  font-size: 18px;
+  box-shadow: 16px 16px 48px #161616, -16px -16px 48px #424242;
+}
+
+#search-bar:hover {
+  transition: all 0.5s;
+  background-color: rgb(65, 64, 64);
+  box-shadow:  24px 24px 48px #202020,
+  -24px -24px 48px #424242;
+}
+
+#mic-button {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border-radius: 40px;
+  position: absolute;
+  filter: invert(50%);
+  margin-top: 5px;
+}
+
+#mic-button:hover {
+  transition: all .5s;
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+#mic-button:active {
+  transition: all .1s;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: -1px 18px 57px -23px rgba(176,174,174,0.75);
+  -webkit-box-shadow: -1px 18px 57px -23px rgba(176,174,174,0.75);
+  -moz-box-shadow: -1px 18px 57px -23px rgba(176,174,174,0.75);
+}
+
+#mic-img {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+}
+
+button {
+  color: #2C2C2C;
+  background-color: rgb(224, 224, 224);
+  border: none;
+  border-radius: 15px;
+  box-shadow:  17px 17px 46px #121212,
+  -17px -17px 46px #464646;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button:hover {
+  transition: all 0.25s; 
+  cursor: pointer;
+  background-color: rgb(196, 196, 196);
+  box-shadow:  17px 17px 46px #242424, -17px -17px 46px #464646;
+}
+
+button:active {
+  background-color: rgb(119, 119, 119);
+}
+
+#submit-button {
+  height: 50px;
+  width: 120px;
+  margin-top: 25px;
+}
+
+#conversation {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-bubble-container + .chat-bubble-container {
+  margin-top: 16px;
+}
+
+.chat-bubble {
+  padding: 8px 12px;
+  border-radius: 15px;
+  margin-bottom: -10px;
+  min-height: 20px;
+  max-width: 450px;
+  text-align: left;
+}
+
+.dot-typing {
+  position: relative;
+  left: -9999px;
+  width: 7px;
+  height: 7px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #fff;
+  box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  animation: dotTyping 1.5s infinite linear;
+}
+
+@keyframes dotTyping {
+  0% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+  16.667% {
+    box-shadow: 9984px -10px 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+  33.333% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+  50% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px -10px 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+  66.667% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+  83.333% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px -10px 0 0 #fff;
+  }
+  100% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+}
